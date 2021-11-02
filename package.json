@@ -1,0 +1,27 @@
+{
+  "name": "layoutframes",
+  "version": "1.0.0",
+  "description": "> Run the following command on your terminal*",
+  "main": "build/index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf && tsc",
+    "dev": "nodemon",
+    "start": "yarn build && node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
